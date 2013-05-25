@@ -46,5 +46,6 @@ Rails3ParkTheSystem::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-root :to => "static#index"
+root 'static#index'
+get '/About' => 'static#about'
 end
